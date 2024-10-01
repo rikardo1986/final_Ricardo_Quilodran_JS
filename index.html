@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Este sitio es para el uso interno de la Fiscalia Sur de Chile">
+    <meta name="keywords" content="inventario, fiscalia">
+    <meta name="author" content="Ricardo Quilodran">
+    <meta name="copyright" content="Ricardo Quilodran">
+    <meta name="robots" content="index, no follow">
+    <title>Inventario</title>
+    <link rel="shortcut icon" href="./assets/img/logo3.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href=""><img src="./assets/img/logo.png" alt=""></a>
+        </div>
+    </header>
+    <main>
+        <section class="principal">
+            <div class="foto_principal">
+                <a href=""><img src="./assets/img/inventario_principal.png" alt=""></a>
+            </div>
+            <div class="titulo">
+                <h1>Sistema de Inventario</h1>
+                <h2>Fiscalia Sur</h2>
+            </div>
+        </section>
+        <section  id="contenido">
+            <div class="ingreso">
+                <button id="agregarProducto" onclick="window.location.href='./pages/agregar.html'">Agregar Producto</button>
+                <button id="modificarProducto"onclick="window.location.href='./pages/modificar.html'">Modificar Producto</button>
+                <button id="buscarProducto"onclick="window.location.href='./pages/buscar.html'">Buscar Producto Por Usuario</button>
+                <button id="eliminarProducto"onclick="window.location.href='./pages/eliminar.html'">Eliminar Producto</button>
+                <button id="exportarBoton">Exportar Inventario</button>
+                <button id="salirSistema">Salir del sistema</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Este sitio web ha sido desarrollado y mantenido por el equipo de 
+            Soporte Informático y Desarrollo. Si tiene alguna sugerencia, 
+            comentario o reclamo, le invitamos a comunicarse con nosotros a 
+            través de la sección de Contacto. También puede enviarnos un mensaje 
+            directamente a nuestro correo electrónico: soporte@minpublico.cl. 
+            Agradecemos su colaboración para ayudarnos a mejorar continuamente 
+            nuestros servicios.</p>
+    </footer>
+
+    <!-- < > -->
+    <script src="./JS/app.js"></script>
+    <script src="./JS/exportar.js"></script>
+</body>
+</html>
+

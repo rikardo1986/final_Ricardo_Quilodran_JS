@@ -1,0 +1,46 @@
+[
+    {
+        "tipo": "Notebook",
+        "marca": "Dell",
+        "modelo": "XPS 15",
+        "serie": "123ABC",
+        "mac": "00:1A:2B:3C:4D:5E",
+        "almacenamiento": "512GB",
+        "estado": "Nuevo",
+        "usuario": "rquilodran",
+        "uso": "Trabajo"
+    },
+    {
+        "tipo": "Cámara web",
+        "marca": "Logitech",
+        "modelo": "C920",
+        "serie": "456DEF",
+        "mac": "00:1A:2B:3C:4D:5F",
+        "almacenamiento": "N/A",
+        "estado": "Usado",
+        "usuario": "jbecerra",
+        "uso": "Videollamadas"
+    },
+    {
+        "tipo": "Disco duro",
+        "marca": "Seagate",
+        "modelo": "ST3000DM001",
+        "serie": "789GHI",
+        "mac": "N/A",
+        "almacenamiento": "2TB",
+        "estado": "Usado",
+        "usuario": "rquilodran",
+        "uso": "almacenamiento"
+    },
+    {
+        "tipo": "Otro insumo",
+        "marca": "LG",
+        "modelo": "OLED AI B4 65",
+        "serie": "ERT456ASD",
+        "mac": "N/A",
+        "almacenamiento": "1GB",
+        "estado": "Nuevo",
+        "usuario": "cquilodran",
+        "uso": "sala de reuniones"
+    }
+]

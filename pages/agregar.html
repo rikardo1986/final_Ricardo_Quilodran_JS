@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Producto</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body class="bg-[rgb(217,217,217)] min-h-screen flex flex-col items-center justify-center">
+    <header>
+        <h1 class="text-3xl font-bold text-[rgb(24,45,152)] mb-6">Agregar Producto</h1>
+    </header>
+    <main class="w-full max-w-lg bg-white shadow-lg p-6 rounded-lg">
+        <form id="formProducto" class="space-y-4">
+            <div>
+                <label for="tipo" class="block text-[rgb(24,45,152)] font-semibold">Tipo de Producto:</label>
+                <select id="tipo" class="w-full border border-[rgb(24,45,152)] rounded-lg p-2 focus:ring-2 focus:ring-[rgb(248,117,22)]" required>
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="Notebook">Notebook</option>
+                    <option value="Cámara web">Cámara web</option>
+                    <option value="Disco duro">Disco duro</option>
+                    <option value="Parlantes">Parlantes</option>
+                    <option value="Otro insumo">Otro insumo</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="marca" class="block text-[rgb(24,45,152)] font-semibold">Marca:</label>
+                <input type="text" id="marca" class="w-full border border-[rgb(24,45,152)] rounded-lg p-2 focus:ring-2 focus:ring-[rgb(248,117,22)]" required>
+            </div>
+
+            <div>
+                <label for="modelo" class="block text-[rgb(24,45,152)] font-semibold">Modelo:</label>
+                <input type="text" id="modelo" class="w-full border border-[rgb(24,45,152)] rounded-lg p-2 focus:ring-2 focus:ring-[rgb(248,117,22)]" required>
+            </div>
+
+            <div>
+                <label for="serie" class="block text-[rgb(24,45,152)] font-semibold">Número de Serie:</label>
+                <input type="text" id="serie" class="w-full border border-[rgb(24,45,152)] rounded-lg p-2 focus:ring-2 focus:ring-[rgb(248,117,22)]" required>
+            </div>
+
+            <div>
+                <label for="mac" class="block text-[rgb(24,45,152)] font-semibold">Dirección MAC:</label>
+                <input type="text" id="mac" class="w-full border border-[rgb(24,45,152)] rounded-lg p-2 focus:ring-2 focus:ring-[rgb(248,117,22)]">
+            </div>
+
+            <div>
+                <label for="almacenamiento" class="block text-[rgb(24,45,152)] font-semibold">Almacenamiento:</label>
+                <input type="text" id="almacenamiento" class="w-full border border-[rgb(24,45,152)] rounded-lg p-2 focus:ring-2 focus:ring-[rgb(248,117,22)]">
+                <select id="unidadAlmacenamiento" class="w-full border border-[rgb(24,45,152)] rounded-lg p-2 mt-2 focus:ring-2 focus:ring-[rgb(248,117,22)]">
+                    <option value="" disabled selected>Capacidad</option>
+                    <option value="GB">GB</option>
+                    <option value="TB">TB</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="estado" class="block text-[rgb(24,45,152)] font-semibold">Estado:</label>
+                <select id="estado" class="w-full border border-[rgb(24,45,152)] rounded-lg p-2 focus:ring-2 focus:ring-[rgb(248,117,22)]" required>
+                    <option value="" disabled selected>Seleccionar</option>
+                    <option value="Nuevo">Nuevo</option>
+                    <option value="Usado">Usado</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="usuario" class="block text-[rgb(24,45,152)] font-semibold">Usuario:</label>
+                <input type="text" id="usuario" class="w-full border border-[rgb(24,45,152)] rounded-lg p-2 focus:ring-2 focus:ring-[rgb(248,117,22)]" required>
+            </div>
+
+            <div>
+                <label for="uso" class="block text-[rgb(24,45,152)] font-semibold">Uso:</label>
+                <input type="text" id="uso" class="w-full border border-[rgb(24,45,152)] rounded-lg p-2 focus:ring-2 focus:ring-[rgb(248,117,22)]" required>
+            </div>
+
+            <button type="submit" class="w-full bg-[rgb(24,45,152)] text-white font-bold py-2 rounded-lg hover:bg-[rgb(248,117,22)] transition-colors">Guardar</button>
+        </form>
+
+        <button id="volver" class="w-full bg-[rgb(248,117,22)] text-white font-bold py-2 rounded-lg mt-4 hover:bg-[rgb(24,45,152)] transition-colors" onclick="window.location.href='../index.html'">Volver</button>
+    </main>
+    <script src="../JS/agregar.js"></script>
+</body>
+</html>
